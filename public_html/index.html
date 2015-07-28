@@ -6,20 +6,40 @@
         <meta charset="UTF-8">
         <meta name="description" content="My awesome class website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="js/jquery.2.1.3.min.js"></script>
+        <script src="js/nav.js"></script>
     </head>
     <body>
-        <header></header>
-        <nav></nav>
-        <main>
+        <header class="u-ct">
+            <img id="logo" src="images/class-website-logo-363x152.png" alt="Class Website Logo">
+        </header>
+        <nav id="navigation">
+            <div class="container">
+                <ul>
+                    <li><a href="famous.html" title="Famous Quotes">Famous Quotes</a></li>
+                    <li><a href="code.html" title="Code of the West">Code of the West</a></li>
+                    <li><a href="nfl.html" title="Ready for Some Football">Ready for Some Football</a></li>
+                    <li><a href="fright.html" title="Fright Fest">Fright Fest</a></li>
+                    <li><a href="mlb.html" title="Play Ball">Play Ball</a></li>
+                    <li><a href="rubiks.html" title="Rubik's Cube Madness">Rubik&rsquo;s Cube Madness</a></li>
+                    <li><a href="rps.html" title="Rock, Paper, Scissors">Rock, Paper, Scissors</a></li>
+                </ul>
+            </div>  
+        </nav>
+        <main id="content" class="container">
             <!-- Student Profile -->
             <section>
                 <!-- All About Me -->
                 <article>
                     <h2>All About Me</h2>
                     <p>James C. is a Diehard Cubs fan and is proud to hail from the great state of Indiana.  A Hoosier through and through, forever keeping it &ldquo;100% Midwest,&rdquo; he also loves to play his guitar and enjoys all things 1s and 0s.  Find him on the weekends riding his bike or taking in a movie with his better half a.k.a. Wifey.</p>
-                    <figure>
+                    <figure id="avatar">
                         <img src="images/jamesc_avatar.png" alt="My Avatar">
-                        <figcaption>James C.</figcaption>
+                        <figcaption class="u-ct">James C.</figcaption>
                     </figure>
                     <aside>
                         <h2>My Favorite Things</h2>
@@ -60,7 +80,7 @@
                                     <td>How to use inline style in my HTML documents.  I also learned about the <em>Code of the West</em>, the once unwritten rules that people who used to live around here swore by.</td>
                                 </tr>
                                 <tr>
-                                    <td><a href="rfs.html" target="_blank" title="Ready For Some Football">Ready for Some Football</a></td>
+                                    <td><a href="nfl.html" target="_blank" title="Ready For Some Football">Ready for Some Football</a></td>
                                     <td>How to use <code>&lt;table&gt;</code> elements and even more about inline style.  I also learned about the generic block tag, <code>&lt;div&gt;</code>, and how it can be used to structure my web pages. </td>
                                 </tr>
                                 <tr>
@@ -72,7 +92,7 @@
                                     <td>How to go even further with embedded style.  I learned about CSS selectors, in particular <code>id</code> and <code>class</code> selectors that allow you to apply CSS rulesets to individual page items or those that share something in common, respectively.</td>
                                 </tr>
                                 <tr>
-                                    <td><a href="rubik.html" target="_blank" title="Rubik's Cube Madness">Rubik&rsquo;s Cube Madness</a></td>
+                                    <td><a href="rubiks.html" target="_blank" title="Rubik's Cube Madness">Rubik&rsquo;s Cube Madness</a></td>
                                     <td>How to use the <code>display</code> property in my stylesheets to control the flow of my web pages.  I also learned how to use the all-important <code>float</code> and <code>clear</code> properties to place elements on the page just where I want them.  This knowledge will also help me create full-fledged websites with headers, footer, sidebars...you name it.</td>
                                 </tr>
                                 <tr>
@@ -85,6 +105,8 @@
                 </article>
             </section>
         </main>
-        <footer></footer>
+        <footer class="u-ct">
+            <h5>I &lt;3 Web Design, bruh</h5>
+        </footer>
     </body>
 </html>

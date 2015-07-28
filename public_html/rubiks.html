@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rubik's Cube Madness</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <style>
+            /* Resets all browsers to not add space to elements */
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto';
+            }
+
+            body {
+                background-color: black;
+            }
+
+            #content {
+                max-width: 600px;
+                margin: 50px auto;
+                background-color: white;
+                border-radius: 30px;
+            }
+
+            #header {
+                padding: 10px 0;
+            }
+
+            #left {
+                float: left;
+                width: 220px;
+                padding: 15px;
+            }
+
+            #right {
+                float: right;
+                width: 350px;
+            }
+
+            #footer {
+                clear: both;
+                text-align: center;
+                padding: 10px 0;
+                font-style: italic;
+            }
+
+            h1 {
+                text-align: center;
+                padding: 0 5px;
+                font-size: 48px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            /* Style and position the cube on the page */
+            #rubik {
+                text-align: center;
+                padding: 50px 10px;
+            }
+
+            /* Contains tiles (on one line) */
+            .row {
+                display: block;
+                font-size: 0;
+            }
+
+            /* Each piece of the Rubik Cube (side-by-side) */
+            .tile {
+                width: 94px;
+                height: 94px;
+                display: inline-block;
+                font-size: 0;
+                border: 3px solid black;
+            }
+            
+            ul {
+                list-style-position: inside;
+            }
+
+            li {
+                padding: 10px;
+            }  
+            
+            /* Tile colors for our Rubik's Cube */
+            .green {
+                background-color: #00D100;
+            }
+
+            .white {
+                background-color: #FFFFFF;
+            }
+
+            .blue {
+                background-color: #2A32FF;
+            }
+
+            .red {
+                background-color: #FF1212;
+            }   
+
+            .orange {
+                background-color: #FF9000;
+            }
+
+            .yellow {
+                background-color: #FFFF00;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div id="header">
+                <h1><a href="http://www.rubiks.com" title="Visit the Official Website">Rubik's Cube</a></h1>
+            </div>
+            <div id="left">
+                <h2>Did You Know?</h2>
+                <ul>
+                    <li>The fastest time for solving Rubik's Cube was 5.5 seconds!</li>
+                    <li>Rubik's Cube was invented in 1975</li>
+                    <li>Rubik's Cube comes from the country of Hungary</li>
+                    <li>Has been solved blindfolded in 23.19 seconds</li>
+                    <li>Solved, by feet only, in 25.14 seconds</li>
+                </ul>
+            </div>
+            <div id="right"></div>
+            <div id="rubik">
+                <div class="row">
+                    <div id="top-left" class="tile green"></div>
+                    <div id="top-center" class="tile yellow"></div>
+                    <div id="top-right" class="tile white"></div></div>
+                <div class="row">
+                    <div id="middle-left" class="tile red"></div>
+                    <div id="middle-center" class="tile orange"></div>
+                    <div id="middle-right" class="tile blue"></div></div>
+                <div class="row">
+                    <div id="bottom-left" class="tile yellow"></div>
+                    <div id="bottom-center" class="tile white"></div>
+                    <div id="bottom-right" class="tile green"></div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>The World’s Top-Selling Puzzle Game!</p> 
+            </div>
+        </div>
+    </body>
+</html>

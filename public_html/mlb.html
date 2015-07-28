@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play Ball</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <style>
+            /* Style all p tags to be 300px wide with no margin or padding */
+            p {
+                margin: 0;
+                padding: 0;
+                width: 300px;
+            }
+
+            /* Style the element whose id is "standing" like so */
+            #standings {
+                background-color: #efefef;
+                padding: 10px;
+                font-family: Roboto;
+            }
+
+            #nationals {
+                background-color: #BA122B;
+                color: #FFFFFF;
+            }
+            #braves {
+                background-color: #002F5F;
+                color: #FFFFFF;
+            }
+            #mets {
+                background-color: #002C77;
+                color: #FB4F14;
+            }
+            #marlins {
+                background-color: #F9423A;
+                color: #000000;
+            }
+            #phillies {
+                background-color: #BA0C2F;
+                color: #003087;
+            }
+            /* Style the element whose id is "cardinal" like so */
+            #cardinals {
+                background-color: #C41E3A;
+                color: #FFFFFF;  
+            }
+
+            /* Style the element whose id is "pirates" like so */
+            #pirates {
+                background-color: #000000;
+                color: #FDB829;  
+            }
+
+            #brewers {
+                background-color: #182B49;
+                color: #FFFFFF;  
+            }
+
+            #reds {
+                background-color: #C6011F;
+                color: #FFFFFF;
+            }
+
+            #cubs {
+                background-color: #003279;
+                color: #FFFFFF;
+            }
+
+            #dodgers {
+                background-color: #083C6B;
+                color: #FFFFFF;
+            }
+
+            #giants {
+                background-color: #000000;
+                color: #F2552C;
+            }
+
+            #padres {
+                background-color: #002147;
+                color: #FFFFFF;
+            }
+
+            #rockies {
+                background-color: #000000;
+                color: #333366;
+            }
+
+            #diamondbacks {
+                background-color: #A71930;
+                color: #000000;
+            }
+
+            #orioles {
+                background-color: #ED4C09;
+                color: #FFFFFF;
+            }
+
+            #yankees {
+                background-color: #1C2841;
+                color: #808080;
+            }
+
+            #bluejays {
+                background-color: #003DA5;
+                color: #041E42;
+            }
+
+            #rays {
+                background-color: #00285D;
+                color: #FFD700;
+            }
+
+            #redsox {
+                background-color: #C60C30;
+                color: #FFFFFF;
+            }
+
+            #tigers {
+                background-color: #001742;
+                color: #DE4406;
+            }
+
+            #royals {
+                background-color: #15317E;
+                color: #FFFFFF;
+            }
+
+            #indians {
+                background-color: #D30335;
+                color: #FFFFFF;
+            }
+
+            #whitesox {
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+
+            #twins {
+                background-color: #C6011F;
+                color: #072754;
+            }
+
+            #angels {
+                background-color: #B71234;
+                color: #FFFFFF;
+            }
+
+            #athletics {
+                background-color: #003831;
+                color: #FFD800;
+            }
+
+            #mariners {
+                background-color: #0C2C56;
+                color: #C0C0C0;
+            }
+
+            #astros {
+                background-color: #072854;
+                color: #FF7F00;
+            }
+
+            #rangers {
+                background-color: #BD1021;
+                color: #FFFFFF;
+            }
+            /* Style class "team" like so */
+            .team {
+                font-weight: bold;
+                line-height: 3;
+                margin-left: 15px;
+                padding-left: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="standings">
+            <h1><a href="http://mlb.mlb.com/mlb/standings/index.jsp?tcid=mm_mlb_standings">Major League Baseball Standings (2015)</a></h1>
+            <h2>National League</h2>
+            <h3>Eastern Division</h3>
+            <p id="braves" class="team">Atlanta Braves</p>
+            <p id="phillies" class="team">Philadelphia Phillies</p>
+            <p id="mets" class="team">New York Mets</p>
+            <p id="marlins" class="team">Miami Marlins</p>
+            <p id="nationals" class="team">Washington Nationals</p>
+            <h3>Central Division</h3>
+            <p id="reds" class="team">Cincinnati Reds</p>
+            <p id="cubs" class="team">Chicago Cubs</p>
+            <p id="cardinals" class="team">St. Louis Cardinals</p>
+            <p id="brewers" class="team">Milwaukee Brewers</p>
+            <p id="pirates" class="team">Pittsburgh Pirates</p>
+            <h3>Western Division</h3>
+            <p id="rockies" class="team">Colorado Rockies</p>
+            <p id="diamondbacks" class="team">Arizona Diamonbacks</p>
+            <p id="giants" class="team">San Francisco Giants</p>
+            <p id="padres" class="team">San Diego Padres</p>
+            <p id="dodgers" class="team">Los Angeles Dodgers</p>
+            <h2>American League</h2>
+            <h3>Eastern Division</h3>
+            <p id="redsox" class="team">Boston Red Sox</p>
+            <p id="orioles" class="team">Baltimore Orioles</p>
+            <p id="bluejays" class="team">Toronto Bluejays</p>
+            <p id="rays" class="team">Tampa Bay Rays</p>
+            <p id="yankees" class="team">New York Yankees</p>
+            <h3>Central Division</h3>
+            <p id="tigers" class="team">Detroit Tigers</p>
+            <p id="royals" class="team">Kansas City Royals</p>
+            <p id="indians" class="team">Cleveland Indians</p>
+            <p id="whitesox" class="team">Chicago White Sox</p>
+            <p id="twins" class="team">Minnesota Twins</p>
+            <h3>Western Division</h3>
+            <p id="athletics" class="team">Oakland Athletics</p>
+            <p id="rangers" class="team">Texas Rangers</p>
+            <p id="astros" class="team">Houston Astros</p>
+            <p id="angels" class="team">Los Angeles Angels</p>
+            <p id="mariners" class="team">Seattle Mariners</p>
+        </div>
+    </body>
+</html>
